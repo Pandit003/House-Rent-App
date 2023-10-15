@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:icon="@drawable/baseline_add_24"
         android:id="@+id/renthome"
-        android:title="Rent Home" />
+        android:title="Add Home" />
     <item
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

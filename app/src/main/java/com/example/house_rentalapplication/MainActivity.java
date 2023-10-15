@@ -210,8 +210,6 @@ public class MainActivity extends AppCompatActivity {
 //                                String location1=location+","+state;
                                 String formattedLocation = location != null ? location.replaceAll("\\s", "").toLowerCase() : "";
                                 String formattedQuery = query1.replaceAll("\\s", "").toLowerCase();
-                                Log.d("DEBUG", "Formatted Location: " + formattedLocation);
-                                Log.d("DEBUG", "Formatted Query: " + formattedQuery);
                                 if (formattedLocation.contains(formattedQuery)){
                                     // The location contains the query substring, add it to your list
                                     String housename = doc.getString("Name");
@@ -219,6 +217,7 @@ public class MainActivity extends AppCompatActivity {
                                     String houseprice = doc.getString("Price");
                                     String houseimguri = doc.getString("House_image");
                                     String houseaddress = location + " , " + cityofhouse;
+                                    String docid2=doc.getId();
                                     Log.d("DEBUG", "Formatted Query: " + query1);
 
                                     Map<String, Object> housedata = new HashMap<>();
@@ -226,6 +225,7 @@ public class MainActivity extends AppCompatActivity {
                                     housedata.put("Location", houseaddress);
                                     housedata.put("Price", houseprice);
                                     housedata.put("House_image", houseimguri);
+                                    housedata.put("Docid",docid2);
 
                                     houseDataList.add(housedata);
                                 }else{
