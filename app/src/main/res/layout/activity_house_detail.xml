@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HouseDetail">
+    <ImageView
+        android:id="@+id/imageofhouse"
+        android:layout_width="match_parent"
+        android:layout_height="244dp"
+        android:background="@drawable/roundcorner"
+        android:clipToOutline="true"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/roundcorner" />
+    <ImageView
+        android:id="@+id/imageofhall"
+        android:layout_width="match_parent"
+        android:layout_height="244dp"
+        android:background="@drawable/roundcorner"
+        android:layout_marginHorizontal="10dp"
+        android:clipToOutline="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageofhouse"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/roundcorner" />
+
+    <ImageView
+        android:id="@+id/imageofbathroom"
+        android:layout_width="match_parent"
+        android:layout_height="244dp"
+        android:background="@drawable/roundcorner"
+        android:layout_marginHorizontal="10dp"
+        android:clipToOutline="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageofhall"
+        app:srcCompat="@drawable/roundcorner" />
+
+    <ImageView
+        android:id="@+id/imageofkitchen"
+        android:layout_width="match_parent"
+        android:layout_height="244dp"
+        android:background="@drawable/roundcorner"
+        android:layout_marginHorizontal="10dp"
+        android:clipToOutline="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageofbathroom"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/roundcorner" />
+    <TextView
+        android:id="@+id/housenametextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintTop_toBottomOf="@id/imageofkitchen"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/locationtextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintTop_toBottomOf="@id/housenametextView"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/discriptiontextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintTop_toBottomOf="@id/locationtextview"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/contacttextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintTop_toBottomOf="@id/discriptiontextview"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/pricetextview"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contacttextview"
+        app:layout_constraintEnd_toStartOf="@+id/housebookbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/housebookbutton"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="Book House"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/pricetextview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/pricetextview"
+        app:layout_constraintTop_toTopOf="@id/pricetextview" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

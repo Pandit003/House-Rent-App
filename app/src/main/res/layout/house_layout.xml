@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="395dp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="244dp"
+        android:background="@drawable/roundcorner"
+        android:clipToOutline="true"
+        app:layout_constraintBottom_toTopOf="@+id/housename"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/roundcorner" />
+
+    <Button
+        android:id="@+id/buy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Book House"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/houseprice"
+        app:layout_constraintStart_toStartOf="@+id/houseprice"
+        app:layout_constraintTop_toBottomOf="@id/houseprice" />
+
+    <TextView
+        android:id="@+id/housename"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/houseaddress"
+        app:layout_constraintEnd_toEndOf="@id/housename"
+        app:layout_constraintStart_toStartOf="@id/housename"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/houseaddress"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/houseprice"
+        app:layout_constraintEnd_toEndOf="@id/housename"
+        app:layout_constraintStart_toStartOf="@+id/housename"
+        app:layout_constraintTop_toBottomOf="@+id/housename" />
+
+    <TextView
+        android:id="@+id/houseprice"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/buy"
+        app:layout_constraintEnd_toEndOf="@+id/houseaddress"
+        app:layout_constraintStart_toStartOf="@+id/houseaddress"
+        app:layout_constraintTop_toBottomOf="@id/houseaddress" />
+</androidx.constraintlayout.widget.ConstraintLayout>

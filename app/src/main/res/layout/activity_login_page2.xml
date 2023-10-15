@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginPage">
+
+    <EditText
+        android:id="@+id/loginpersonmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/edittext_frame"
+        android:elevation="8dp"
+        android:gravity="center_vertical"
+        android:hint="Email"
+        android:textColorHint="#6E6A6A"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:paddingStart="16dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.344" />
+
+    <EditText
+        android:id="@+id/loginpersonpass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/black"
+        android:textColorHint="#6E6A6A"
+        android:layout_marginTop="44dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/edittext_frame"
+        android:elevation="8dp"
+        android:gravity="center_vertical"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="16dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/loginpersonmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/loginpersonmail"
+        app:layout_constraintTop_toBottomOf="@+id/loginpersonmail" />
+
+    <TextView
+        android:id="@+id/textviewregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginTop="20dp"
+        android:textColor="#3F51B5"
+        android:layout_marginRight="50dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/loginpersonpass"
+        app:layout_constraintTop_toBottomOf="@+id/loginpersonpass" />
+
+    <Button
+        android:id="@+id/loginbutton12"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/edittext_frame"
+        android:elevation="8dp"
+        android:text="Login"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/loginpersonpass"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/loginpersonpass"
+        app:layout_constraintTop_toBottomOf="@+id/loginpersonpass" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

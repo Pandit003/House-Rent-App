@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    tools:context=".SettingFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".RentHouse">
+
+        <!-- TODO: Update blank fragment layout -->
+        <ImageView
+            android:id="@+id/profileimg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:maxWidth="150dp"
+            android:maxHeight="150dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/circle"
+            android:clipToOutline="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/nametextView"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/profileimg"
+            app:layout_constraintStart_toStartOf="@id/profileimg"
+            app:layout_constraintTop_toBottomOf="@id/profileimg" />
+
+        <TextView
+            android:id="@+id/personemail"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext_frame"
+            android:elevation="8dp"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:text="Edit profile"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/personpass"
+            app:layout_constraintEnd_toEndOf="@+id/nametextView"
+            app:layout_constraintStart_toStartOf="@+id/nametextView"
+            app:layout_constraintTop_toBottomOf="@+id/nametextView"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/personpass"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext_frame"
+            android:elevation="8dp"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:text="Wishlist"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/emailofaperson"
+            app:layout_constraintEnd_toEndOf="@+id/personemail"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/personemail"
+            app:layout_constraintTop_toBottomOf="@+id/personemail"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/emailofaperson"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext_frame"
+            android:elevation="8dp"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:text="Logout"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/personpassword"
+            app:layout_constraintEnd_toEndOf="@+id/personpass"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/personpass"
+            app:layout_constraintTop_toBottomOf="@+id/personpass"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/personpassword"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext_frame"
+            android:elevation="8dp"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:text="Help"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/emailofaperson"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/emailofaperson"
+            app:layout_constraintTop_toBottomOf="@+id/emailofaperson"
+            app:layout_constraintVertical_bias="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
